@@ -80,7 +80,7 @@ function AssetModal({ type, modalOpen, setModalOpen, asset }) {
     }
     if (serialNumber && status) {
       if (type === 'add') {
-          fetch(`http://ec2-35-172-129-171.compute-1.amazonaws.com/lab5/api/asset`, {
+          fetch(`https://tengasolar.co.zw/lab5/api/asset`, {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
@@ -106,7 +106,7 @@ function AssetModal({ type, modalOpen, setModalOpen, asset }) {
             });
       }
       if (type === 'update') {
-        fetch(`http://ec2-35-172-129-171.compute-1.amazonaws.com/lab5/api/asset/${_id}`, {
+        fetch(`https://tengasolar.co.zw/lab5/api/asset/${_id}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json'

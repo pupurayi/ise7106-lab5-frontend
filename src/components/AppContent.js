@@ -25,7 +25,7 @@ const child = {
 function AppContent() {
   const [assetList, setAssetList] = useState([]);
   useEffect(() => {
-    fetch('http://ec2-35-172-129-171.compute-1.amazonaws.com/lab5/api/assets', {
+    fetch('https://tengasolar.co.zw/lab5/api/assets', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json'
