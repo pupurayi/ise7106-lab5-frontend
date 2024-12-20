@@ -20,7 +20,7 @@ function AssetItem({ asset }) {
   const [updateModalOpen, setUpdateModalOpen] = useState(false);
 
   const handleDelete = () => {
-    fetch(`http://localhost:4100/api/asset/${asset._id}`, {
+    fetch(`http://ec2-35-172-129-171.compute-1.amazonaws.com/lab5/api/asset/${asset._id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json'

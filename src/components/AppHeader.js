@@ -27,8 +27,8 @@ function AppHeader() {
         value={filterStatus}
       >
         <option value="all">All</option>
-        <option value="old">Old</option>
-        <option value="new">New</option>
+        <option value="Old">Old</option>
+        <option value="New">New</option>
       </SelectButton>
       <AssetModal type="add" modalOpen={modalOpen} setModalOpen={setModalOpen} />
     </div>
